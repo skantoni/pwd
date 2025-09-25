@@ -6,7 +6,7 @@
   <title>Skeny App</title>
 
   <!-- Manifest -->
-  <link rel="manifest" href="/manifest.json">
+  <link rel="manifest" href="manifest.json">
 
   <!-- Cor da barra de navegação -->
   <meta name="theme-color" content="#000000">
@@ -21,7 +21,7 @@
   <script>
     // Registra o Service Worker
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/service-worker.js')
+      navigator.serviceWorker.register('service-worker.js')
         .then(() => console.log("Service Worker registrado!"))
         .catch(err => console.error("Erro ao registrar SW:", err));
     }
