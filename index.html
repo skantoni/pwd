@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skeny App</title>
+
+  <!-- Manifest -->
+  <link rel="manifest" href="/manifest.json">
+
+  <!-- Cor da barra de navegação -->
+  <meta name="theme-color" content="#000000">
+
+  <!-- Ícones para fallback -->
+  <link rel="icon" href="icones/icon-512.png">
+</head>
+<body>
+  <h1>🚀 Olá, este é o meu PWA!</h1>
+  <p>Podes instalar este site como app no teu dispositivo.</p>
+
+  <script>
+    // Registra o Service Worker
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/service-worker.js')
+        .then(() => console.log("Service Worker registrado!"))
+        .catch(err => console.error("Erro ao registrar SW:", err));
+    }
+  </script>
+</body>
+</html>
