@@ -1,9 +1,9 @@
 const CACHE_NAME = "Meu_PrimeiroApp";
 const FILES_TO_CACHE = [
   "/",
-  "/index.html",
-  "/icones/icon-192.png",
-  "/icones/icon-512.png"
+  "index.html",
+  "icones/icon-192.png",
+  "icones/icon-512.png"
 ];
 
 // Instala o Service Worker
